@@ -27,10 +27,26 @@ a {
 header {
     height: 100px;
     width: 100%;
-    background-color: #031213;
+    background-color: #00b6bc;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
+/*      QUE CONSTE QUE LE PREGUNTE A JOSHUA*/
+
+/* 
+.carrusel {
+    width: 100%;
+    height: 600px;
+    background: #bc4e9c;
+background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url;
+background: linear-gradient(to right, hsla(153, 95%, 50%, 0.516), hsla(171, 45%, 52%, 0.598)), url(../images/catedral\ esteli.png);
+background-size: cover;
+background-attachment: fixed;
+position: relative;
+}
+
+*/
 
 h2 {
     text-transform: uppercase;
@@ -55,7 +71,7 @@ h2 {
 }
 
 #searchInput {
-    width: 20%;
+    width: 60%;
 }
 
 #resultados {
@@ -83,7 +99,7 @@ h2 {
     height: 30px;
     width: 80%;
     border: none;
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px 10px 10px 10px;
     padding: 2px;
 }
 
@@ -103,7 +119,8 @@ h2 {
 .navContent {
     height: 35px;
     width: 100%;
-    background-color: #35858B;
+    background-color:#71d5e4;
+
 }
 
 .navUl {
@@ -130,40 +147,115 @@ h2 {
 
 .sectionContent {
     height: auto;
+
     width: 100%;
 }
 
-.carrusel {
-
-    background-color: #E3F9E8;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-
+.wave {
+    position: absolute;
+    bottom:0;
+    width: 100%; 
 }
 
-.carrusel img {
-    height: 650px;
+
+/* .carrusel .slide img {
+    
+    height: 710px;
     width: 100%;
     object-fit: cover;
-}
+} */
 
 .targetLocation {
     /* position:relative; */
     height: 175px;
     /* min-width: 600px; */
     width: 45%;
-    background-color: #fae6c4;
+    background-color: #ffff;
     border-radius: 20px;
     display: flex;
     align-items: center;
     margin: 15px 15px 0 0;
 }
 
+.contentInfo {
+    /* margin-top: 0px; */
+    height: 80px;
+    z-index: 0;
+    background-color: #e4f4f3;
+    opacity: 0.8;
+}
+
+.carrusel {
+
+    /* background-color: #E3F9E8; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* display: flex; */
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 710px; 
+
+}
+
+.slide {
+    width: 100%;
+    height: 710px;
+    position: absolute;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 100%;
+    height: 710px;
+    /* height: 100%; */
+    object-fit: cover;
+}
+
+.btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #ffff;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.btn:active {
+    transform: scale(1.1);
+}
+
+.btn-prev {
+    top: 45%;
+    left: 2%;
+}
+
+.btn-next {
+    top: 45%;
+    right: 2%;
+}
+
+.contentInfo h2 {
+
+    position: absolute;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    opacity: 100%;
+    color: black;
+}
+
 .contentLocation {
     height: auto;
     width: 100%;
-    background-color: #8bbabdc0;
+    background-color: #00B6BC ;
     padding: 20px 20px;
     display: flex;
     flex-wrap: wrap;
@@ -184,7 +276,7 @@ h2 {
 .imagen img {
     height: 150px;
     width: 150px;
-    background-color: #0b3151;
+    background-color: #FFFFFF;
     margin-left: 10px;
     border-radius: 10px;
     object-fit: cover;
@@ -215,7 +307,7 @@ h2 {
 .contentGalery {
     height: auto;
     width: 100%;
-    background-color: rgba(139, 186, 189, 0.589);
+    background-color: #C5E5A5;
     padding: 10px 0px;
     margin: 15px auto 0;
     /* border-radius: 20px; */
@@ -417,7 +509,7 @@ summary {
     background: #cedce7;
     background: -webkit-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
     background: -o-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
-    background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+    background: linear-gradient(45deg, #cedce7 0%, #8ee9bb 100%);
 }
 
 .front:after {
@@ -560,7 +652,8 @@ summary {
     }
 
     .headerInput {
-        width: 800px;
+        width: 200px;
+        margin-right: 50px;
     }
 
     h2 {
@@ -576,8 +669,6 @@ summary {
     .site_description {
         width: 80%;
     }
-
-
 
     .footer img {
         width: 50%;
@@ -628,18 +719,26 @@ summary {
     .imagen p {
         text-align: justify;
     }
-/* ELI AQUI ES DONDE VA A TOCAR, NINGUN OTRO LADO */
-    .footer, .footer-row {
+
+
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    /* ELI AQUI ES DONDE VA A TOCAR, NINGUN OTRO LADO */
+    .footer .footer-row {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        
     }
-
 }
 
 @media only screen and (min-width: 600px) {
     body {
-        background-color: magenta;
+        /* background-color: magenta; */
     }
 
     .headerBotton {
@@ -652,7 +751,9 @@ summary {
     }
 
     .headerInput {
-        width: 400px;
+        /* width: 50%; */
+        margin: 0 40px;
+
     }
 
     .contentLocation {
@@ -732,9 +833,7 @@ summary {
         margin: 10px;
     }
 
-    .headerInput {
-        width: 400px;
-    }
+
 
     h2 {
         color: black;
@@ -906,6 +1005,7 @@ summary {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        block-size: 100px;
     }
 
 
@@ -946,7 +1046,8 @@ summary {
 
 @media only screen and (min-width: 1200px) {
     body {
-        background-color: orange;
+        background-color: #8bbabdc0;
+
     }
 
     .headerBotton {
@@ -954,8 +1055,11 @@ summary {
     }
 
     .LogoHeader {
-        width: 150px;
-        margin: 10px;
+        width: 350px;
+        margin: 20px;
+        height: 70px;
+
+
     }
 
     .headerInput {
@@ -1023,7 +1127,7 @@ summary {
     }
 
     footer {
-        height: 250px;
+        height: 150px;
         width: 100%;
         background-color: #1f1f1f;
         color: #ffffff;
@@ -1066,3 +1170,8 @@ summary {
 
 
 }
+/* .recorrido-Nic{
+    border-radius: 20px;
+
+
+} */
