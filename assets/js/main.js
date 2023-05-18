@@ -2,7 +2,7 @@ const searchInput = document.getElementById("searchInput")
 
 const resultados = document.getElementById("resultados")
 let calc = 0;
-// esos medias ya no dan para mas y mucho menos sirven ese footer mas dañado que mi vida. XD
+// esto es lo que hace fuuncionar el carrusel
 const listOfPlaces = document.getElementsByClassName("result")
 
 searchInput.addEventListener("keyup", e=>{

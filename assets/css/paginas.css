@@ -17,7 +17,7 @@ body {
 }
 
 .titulo {
-    color: #642a73;
+    color: #2a7359;
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
@@ -32,7 +32,7 @@ header {
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url;
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(190, 95%, 50%, 0.459), hsla(193, 45%, 52%, 0.133)), url(../images/Portada-todo.jpg);
+    background: linear-gradient(to right, hsla(190, 53%, 55%, 0.459), hsla(193, 45%, 52%, 0.133)), url(../images/Portada-todo.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
@@ -106,7 +106,7 @@ main .sobre-nosotros{
 
 .contenido-textos h3 span{
     background: #068671;
-    color: #fff;
+    color: #f2f2f2;
     border-radius: 50%;
     display: inline-block;
     text-align: center;
@@ -191,8 +191,9 @@ main .sobre-nosotros{
     border-radius: 10px;
 }
 
+
 .mapa-llegar{
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin: 50px 50px 0 0;
@@ -201,7 +202,7 @@ main .sobre-nosotros{
 /*  Our team */
 
 .about-services{
-    background: #f2f2f2;
+    background: #959595;
     padding-bottom: 30px;
 }
 
@@ -481,23 +482,5 @@ footer{
         align-items: center;
         width: 400px;
         
-
     }
-    /* .png-direction{
-        height: 15px;
-        width: 20% ;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 10px;
-        
-    } */
-    /* .imagen-menu img{
-        margin-left:20px;
-        width: 600px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-    } */
-    
+}

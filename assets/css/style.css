@@ -255,7 +255,7 @@ h2 {
 .contentLocation {
     height: auto;
     width: 100%;
-    background-color: #00B6BC ;
+    background-color:             hsl(175, 57%, 86%) ;
     padding: 20px 20px;
     display: flex;
     flex-wrap: wrap;
@@ -307,7 +307,7 @@ h2 {
 .contentGalery {
     height: auto;
     width: 100%;
-    background-color: #C5E5A5;
+    background-color: #a5e5d1;
     padding: 10px 0px;
     margin: 15px auto 0;
     /* border-radius: 20px; */
@@ -343,11 +343,13 @@ h2 {
     justify-content: center;
     overflow: hidden;
 } */
-
+/* .contentLocation {
+    background-color: #000;
+} */
 .contentquestions {
     height: 400px;
     width: 100%;
-    background-color: #68eec1;
+    background-color: #68eebb;
     margin: 20px auto;
     border-radius: 10px;
 }
@@ -355,7 +357,7 @@ h2 {
 .contentquestions {
     height: auto;
     width: 100%;
-    background-color: #a0dfeb8e;
+    background-color: #a5a0eb8e;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -625,7 +627,7 @@ summary {
     z-index: 1000;
     height: 50px;
     width: 50px;
-    background-color: yellow;
+    /* background-color: yellow; */
     border-radius: 50%;
     margin-left: 90%;
     margin-top: 5%;
@@ -638,9 +640,9 @@ summary {
 }
 
 @media only screen and (max-width: 600px) {
-    body {
+    /* body {
         background-color: yellow;
-    }
+    } */
 
     .headerBotton {
         width: 200px;
@@ -737,9 +739,9 @@ summary {
 }
 
 @media only screen and (min-width: 600px) {
-    body {
-        /* background-color: magenta; */
-    }
+    /* body {
+        background-color: magenta;
+    } */
 
     .headerBotton {
         width: 100px;
@@ -772,8 +774,8 @@ summary {
     footer {
         height: 250px;
         width: 100%;
-        background-color: #1f1f1f;
-        color: #ffffff;
+        /* background-color: #1f1f1f;
+        color: #ffffff; */
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -820,9 +822,9 @@ summary {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    body {
+    /* body {
         background-color: red;
-    }
+    } */
 
     .headerBotton {
         width: 100px;
@@ -922,9 +924,9 @@ summary {
 }
 
 @media only screen and (min-width: 900px) {
-    body {
+    /* body {
         background-color: #144d45;
-    }
+    } */
 
     .headerBotton {
         width: 150px;
@@ -1057,7 +1059,7 @@ summary {
     .LogoHeader {
         width: 350px;
         margin: 20px;
-        height: 70px;
+        height: 80px;
 
 
     }
